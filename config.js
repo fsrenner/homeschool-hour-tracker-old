@@ -1,5 +1,5 @@
 module.exports = {
-    'host': 'localhost',
+    'host': 'mysql://mysql:3306/',
     'user': 'fsrenner',
     'pass': 'nodeman1',
     'database': 'homeschooltracker',
