@@ -1,6 +1,6 @@
 module.exports = {
     'host': 'localhost',
-    'user': 'root',
+    'user': 'fsrenner',
     'pass': 'nodeman1',
     'database': 'homeschooltracker',
     'systemUser': 'coreopsis'
