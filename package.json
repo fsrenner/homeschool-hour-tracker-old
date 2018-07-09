@@ -4,6 +4,7 @@
   "description": "First iteration of the Homeschool tracker for tracking 2018-2019 hours for Liam",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steve Renner",
