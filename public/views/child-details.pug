@@ -1,0 +1,82 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Homeschool Tracker
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
+        link(rel='stylesheet', href='../styles/style.css')
+
+        script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+        script(src='../scripts/script.js')
+    body
+        div.container
+            div.row
+                h1 Welcome #{user}
+
+                h3(class='name') Displaying #[span #{name}]'s details
+                    table.table.table-bordered
+                        thead
+                            tr
+                                th Subject
+                                th Input Hours
+                                th Total Hours
+                        tbody
+                            tr
+                                td(colspan=2) CORE
+                                td#coreTotal #{core}
+                            tr
+                                td Math
+                                td
+                                    input(type='number', id='math', name='math', placeholder=0)
+                                td#mathTotal #{math}
+                            tr
+                                td History
+                                td
+                                    input(type='number', id='history', name='history', placeholder=0)
+                                td#historyTotal #{history}
+                            tr
+                                td Science
+                                td
+                                    input(type='number', id='science', name='science', placeholder=0)
+                                td#scienceTotal #{science}
+                            tr
+                                td Language
+                                td
+                                    input(type='number', id='language', name='language', placeholder=0)
+                                td#languageTotal #{language}
+                            tr
+                                td Reading
+                                td
+                                    input(type='number', id='reading', name='reading', placeholder=0)
+                                td#readingTotal #{reading}
+                            tr
+                                td(colspan=2) NON-CORE
+                                td#noncoreTotal #{noncore}
+                            tr
+                                td PE
+                                td
+                                    input(type='number', id='pe', name='pe', placeholder=0)
+                                td#peTotal #{pe}
+                            tr
+                                td Music
+                                td
+                                    input(type='number', id='music', name='music', placeholder=0)
+                                td#musicTotal #{music}
+                            tr
+                                td Art
+                                td
+                                    input(type='number', id='art', name='art', placeholder=0)
+                                td#artTotal #{art}
+                            tr
+                                td Life Skills
+                                td
+                                    input(type='number', id='life', name='life', placeholder=0)
+                                td#lifeTotal #{life}
+                            tr
+                                td Bible
+                                td
+                                    input(type='number', id='bible', name='bible', placeholder=0)
+                                td#bibleTotal #{bible}
+                    p.lead Total Hours: #{grandTotal}
+                    button(class='btn btn-primary btn-block btn-signin', id='updateHours') Update Hours

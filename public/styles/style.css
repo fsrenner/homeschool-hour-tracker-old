@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body, html {
+    height: 100%;
+    font-family: San Francisco, Helvetica Neue, sans-serif;
+    background-repeat: no-repeat;
+}
+
+.card-container.card {
+    max-width: 325px;
+    padding: 35px 35px;
+}
+
+.btn {
+    height: 36px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 15px 0;
+    display: block;
+}
+
+.profile-name-card {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    min-height: 1em;
+}
+
+.form-signin #username,
+.form-signin #password {
+    direction: lrt;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.form-signin .form-contol:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+}
+
+.profile-img-card i {
+    font-size: 96px;
+    color: #999;
+    text-align: center;
+}
+
+.createAccount {
+    text-align: center;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
+}
+
+#register {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+.glyphicon-ok-sign {
+    color: green;
+}
+
+.glyphicon-exclamation-sign {
+    color: orange;
+}

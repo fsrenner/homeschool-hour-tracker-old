@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Homeschool Tracker
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')
+        link(rel='stylesheet', href='../styles/style.css')
+
+        script(src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js')
+        script(src='../scripts/script.js')
+    body
+        div.container
+        div.container
+            div.card.card-container
+                div.profile-img-card
+                img(id='profile-img', class='profile-img-card', src='../images/triquetra.png')
+                p(id='profile-name', class='profile-name-card') HOMESCHOOL TRACKER
+                form(class='form-signin', id='signIn', action='', method='post')
+                    div.form-group
+                        input(type='text', id='user', name='user', class='form-control', placeholder='Access code', required='required')
+                    button(class='btn btn-primary btn-block btn-signin', id='login') Login

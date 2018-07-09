@@ -1,0 +1,16 @@
+{
+  "name": "homeschool-hour-tracker",
+  "version": "1.0.0",
+  "description": "First iteration of the Homeschool tracker for tracking 2018-2019 hours for Liam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Renner",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.3"
+  }
+}
