@@ -5,7 +5,6 @@ const model = require('./model');
 const config = require('./config');
 
 const app = express();
-const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 
 app.set('views', './public/views');
@@ -51,11 +50,10 @@ app.get('/user/update/:name', (req, res) => {
     model.updateChildHours(req, res, hours, name);
 });
 
-app.listen(PORT, HOST, (err) => {
+app.listen(PORT, (err) => {
    if (err) {
        throw new Error();
    } else {
-       console.log('Homeschool Tracker app is listening at: '
-            + HOST + ':' + PORT);
+       console.log('Homeschool Tracker app is listening on port: ' + PORT);
     }
 });
